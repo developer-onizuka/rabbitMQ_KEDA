@@ -53,6 +53,7 @@ job.batch/rabbitmq-publish created
 ```
 
 # 4. Automatic Scale Out of KEDA
+RabbitMQ consumer's instances will be created soon. 
 ```
 # kubectl get deploy -w
 NAME                READY   UP-TO-DATE   AVAILABLE   AGE
