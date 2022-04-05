@@ -113,6 +113,41 @@ rabbitmq-consumer   30/0    30           30          5m26s
 rabbitmq-consumer   18/0    18           18          5m26s
 rabbitmq-consumer   1/0     1            1           5m26s
 rabbitmq-consumer   0/0     0            0           5m26s
+
+# kubectl get pods -o wide 
+NAME                                 READY   STATUS      RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+rabbitmq-0                           1/1     Running     0          36m   10.10.168.196   worker7   <none>           <none>
+rabbitmq-consumer-8688c887df-25hr5   1/1     Running     0          9s    10.10.189.86    worker2   <none>           <none>
+rabbitmq-consumer-8688c887df-4l7g4   1/1     Running     0          9s    10.10.168.213   worker7   <none>           <none>
+rabbitmq-consumer-8688c887df-58thf   1/1     Running     0          9s    10.10.42.80     worker5   <none>           <none>
+rabbitmq-consumer-8688c887df-5njgm   1/1     Running     0          24s   10.10.45.204    worker8   <none>           <none>
+rabbitmq-consumer-8688c887df-5vpkg   1/1     Running     0          9s    10.10.35.19     worker6   <none>           <none>
+rabbitmq-consumer-8688c887df-8rx7p   1/1     Running     0          39s   10.10.45.203    worker8   <none>           <none>
+rabbitmq-consumer-8688c887df-bvhqt   1/1     Running     0          9s    10.10.189.85    worker2   <none>           <none>
+rabbitmq-consumer-8688c887df-ckq8z   1/1     Running     0          54s   10.10.42.78     worker5   <none>           <none>
+rabbitmq-consumer-8688c887df-cq9vs   1/1     Running     0          54s   10.10.168.210   worker7   <none>           <none>
+rabbitmq-consumer-8688c887df-ctpsz   1/1     Running     0          24s   10.10.189.84    worker2   <none>           <none>
+rabbitmq-consumer-8688c887df-f4sm4   1/1     Running     0          24s   10.10.182.14    worker3   <none>           <none>
+rabbitmq-consumer-8688c887df-g8z67   1/1     Running     0          24s   10.10.235.149   worker1   <none>           <none>
+rabbitmq-consumer-8688c887df-gf7zv   1/1     Running     0          65s   10.10.189.83    worker2   <none>           <none>
+rabbitmq-consumer-8688c887df-ht4f2   1/1     Running     0          9s    10.10.168.212   worker7   <none>           <none>
+rabbitmq-consumer-8688c887df-hzj6s   1/1     Running     0          24s   10.10.35.18     worker6   <none>           <none>
+rabbitmq-consumer-8688c887df-l6789   1/1     Running     0          24s   10.10.199.144   worker4   <none>           <none>
+rabbitmq-consumer-8688c887df-lkg5c   1/1     Running     0          9s    10.10.45.205    worker8   <none>           <none>
+rabbitmq-consumer-8688c887df-lz84r   1/1     Running     0          9s    10.10.199.146   worker4   <none>           <none>
+rabbitmq-consumer-8688c887df-p2z2t   1/1     Running     0          24s   10.10.42.79     worker5   <none>           <none>
+rabbitmq-consumer-8688c887df-pqw28   1/1     Running     0          39s   10.10.182.13    worker3   <none>           <none>
+rabbitmq-consumer-8688c887df-q4c9v   1/1     Running     0          24s   10.10.168.211   worker7   <none>           <none>
+rabbitmq-consumer-8688c887df-q7d59   1/1     Running     0          9s    10.10.199.145   worker4   <none>           <none>
+rabbitmq-consumer-8688c887df-q7qcd   1/1     Running     0          9s    10.10.235.151   worker1   <none>           <none>
+rabbitmq-consumer-8688c887df-q8x6p   1/1     Running     0          54s   10.10.235.148   worker1   <none>           <none>
+rabbitmq-consumer-8688c887df-q9lmn   1/1     Running     0          9s    10.10.235.150   worker1   <none>           <none>
+rabbitmq-consumer-8688c887df-qjmmx   1/1     Running     0          9s    10.10.42.81     worker5   <none>           <none>
+rabbitmq-consumer-8688c887df-rcgx7   1/1     Running     0          9s    10.10.182.15    worker3   <none>           <none>
+rabbitmq-consumer-8688c887df-rfnzz   1/1     Running     0          39s   10.10.199.143   worker4   <none>           <none>
+rabbitmq-consumer-8688c887df-sdkzs   1/1     Running     0          9s    10.10.35.20     worker6   <none>           <none>
+rabbitmq-consumer-8688c887df-tlg75   1/1     Running     0          39s   10.10.35.17     worker6   <none>           <none>
+rabbitmq-publish-cp64x               0/1     Completed   0          73s   10.10.189.82    worker2   <none>           <none>
 ```
 
 ```
