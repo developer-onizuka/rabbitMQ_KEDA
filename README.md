@@ -44,12 +44,25 @@ You should see rabbitmq-consumer deployment with 0 pods as there currently aren'
 # kubectl get deploy
 NAME                READY   UP-TO-DATE   AVAILABLE   AGE
 rabbitmq-consumer   0/0     0            0           9s
+
+# kubectl exec -it rabbitmq-0 -- rabbitmqctl list_queues
+Timeout: 60.0 seconds ...
+Listing queues for vhost / ...
+name	messages
+hello	0
 ```
 
 # 3. Publish messages to the queue 
+You can find 300 messages in the queue named hello.
 ```
 # kubectl apply -f deploy/deploy-publisher-job.yaml
 job.batch/rabbitmq-publish created
+
+# kubectl exec -it rabbitmq-0 -- rabbitmqctl list_queues
+Timeout: 60.0 seconds ...
+Listing queues for vhost / ...
+name	messages
+hello	300
 ```
 
 # 4. Automatic Scale Out of KEDA
