@@ -26,7 +26,7 @@ rabbitmq-0   1/1     Running   0          34s
 ```
 
 # 2. Deploy a RabbitMQ consumer
-
+See also https://github.com/kedacore/sample-go-rabbitmq.
 ```
 # git clone https://github.com/kedacore/sample-go-rabbitmq
 
