@@ -41,7 +41,7 @@ scaledobject.keda.sh/rabbitmq-consumer created
 triggerauthentication.keda.sh/rabbitmq-consumer-trigger unchanged
 ```
 
-You should see rabbitmq-consumer deployment with 0 pods as there currently aren't any queue messages. It is scale to zero
+You should see rabbitmq-consumer deployment with 0 pods as there currently aren't any queue messages.
 ```
 # kubectl get deploy
 NAME                READY   UP-TO-DATE   AVAILABLE   AGE
