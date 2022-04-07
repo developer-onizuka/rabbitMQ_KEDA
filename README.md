@@ -14,7 +14,7 @@ Before this step, you must create a storageclass such as nfs etc. <br>
 See also https://github.com/developer-onizuka/persistentVolume-CSI.
 
 ```
-# helm install rabbitmq --set auth.username=user --set auth.password=PASSWORD --set persistence.storageClass=nfs-vm-csi bitnami/rabbitmq
+# helm install rabbitmq --set auth.username=user --set auth.password=PASSWORD --set persistence.storageClass=nfs-vm-csi --set service.type=LoadBalancer bitnami/rabbitmq
 
 # kubectl get pvc
 NAME                 STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   AGE
