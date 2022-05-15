@@ -16,6 +16,7 @@ Before this step, you must create a storageclass such as nfs etc. <br>
 See also https://github.com/developer-onizuka/persistentVolume-CSI.
 
 ```
+# helm repo add bitnami https://charts.bitnami.com/bitnami
 # helm install rabbitmq --set auth.username=user --set auth.password=PASSWORD --set persistence.storageClass=nfs-vm-csi --set service.type=LoadBalancer bitnami/rabbitmq
 
 # kubectl get pvc
